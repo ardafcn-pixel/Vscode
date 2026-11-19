@@ -214,7 +214,7 @@ int main(){
                     }
                     
             }
-*/
+
     int kalan;
     int sayi1;
     int toplam = 0;
@@ -222,14 +222,47 @@ int main(){
         printf("bir sayı giriniz: ");
             scanf("%d", &sayi1);
 
-            for (;sayi1 > 0;)
+            for (;sayi1 > 0; sayi1 = sayi1/10)
             {
                 kalan = sayi1 % 10;
                 toplam = toplam + kalan;
-                sayi1 = sayi1/10;
             }
 
             printf("bu sayının basamakları toplamı= %d", toplam);
-            
+
+    char a[20];
+    int temp = 0;
+    int i;
+    int j;
+
+
+        printf("Bir sayı giriniz: ");
+            scanf("%s", a);
+    
+        for (i = 0; a[i] != '\0'; i++)
+        {
+            for (j = 0; a[j + 1] != '\0'; j++)
+            {
+                if( a[j]<a[j+1])
+                {
+                    temp = a[j];
+                    a[j] = a[j+1];
+                    a[j+1] = temp;
+                }
+            }
+        }
+
+        printf("%s ", a);,
+
+*/
+
+    { 
+        int n1=5,i,j,k=15; 
+            for(i=n;i>=0;i++) 
+    { 
+        for(m=0,m<k;m++)printf(" "); 
+            for(j=i;j<=n,j--) printf("%3d",j); 
+                Printf("\n");k-=3; 
+    }
     return 0;
     }
