@@ -2,8 +2,6 @@
 
 int main(){
 
-    /*
-
     int dongu;
     int xx;
     int faktoryel = 1;
@@ -39,7 +37,6 @@ int main(){
 
     int A[10];
     int B[10];
-    int i;
     int j = 0;
 
         for (i = 1; i <= 10; i++)
@@ -64,7 +61,6 @@ int main(){
         
         
     int a[3];
-    int i;
 
         for ( i = 1; i < 4; i++)
         {
@@ -86,8 +82,7 @@ int main(){
     
 
             int n;
-            int i;
-            int toplam=0;
+            toplam=0;
 
             printf("Bir sayı giriniz: ");
                 scanf("%d", &n);
@@ -109,15 +104,13 @@ int main(){
             
                 printf("%d ", toplam);
 
-        İç içe döngüyle şu çıktıları veren kodları yaz:
+    /*  İç içe döngüyle şu çıktıları veren kodları yaz:
      (a)  *       (b)  1 2 3 4      (c)        *
           **           1 2 3                  **
           ***          1 2                   ***
           ****         1                    ****
-     
+    */ 
 
-        int i; 
-        int j;
         int k;
         int satir;
         int sutun;
@@ -161,9 +154,8 @@ int main(){
             printf("\n");
         }
 
-       int n;
-       int i;
-       int faktoryel=1;
+
+        faktoryel=1;
        
         printf("Faktoryelini bulmak istediğiniz sayıyı yazınız: ");
             scanf("%d", &n);
@@ -176,16 +168,16 @@ int main(){
                 printf("girdiğiniz sayının faktoryeli: %d", faktoryel);
 
 
-    int a;
-    int i;
-    int k=0;
-    scanf("%d", &a);
+            int c;
+
+    k=0;
+    scanf("%d", &c);
 
         printf("bu sayı şu sayılara bölünüyor: \n");
     
-        for (i = 1; i <=a; i++)
+        for (i = 1; i <=c; i++)
         {
-            if (a % i==0)
+            if (c % i==0)
             {
                 printf("%d \n",i);
                 k++;
@@ -197,8 +189,6 @@ int main(){
 
 
 
-    int i;
-    int j;
     int temp;
     
         int arda[]= {4,1,2,1,6};
@@ -217,7 +207,7 @@ int main(){
 
     int kalan;
     int sayi1;
-    int toplam = 0;
+    toplam = 0;
 
         printf("bir sayı giriniz: ");
             scanf("%d", &sayi1);
@@ -230,39 +220,27 @@ int main(){
 
             printf("bu sayının basamakları toplamı= %d", toplam);
 
-    char a[20];
-    int temp = 0;
-    int i;
-    int j;
+    char aa[20];
+    temp = 0;
 
 
         printf("Bir sayı giriniz: ");
-            scanf("%s", a);
+            scanf("%s", aa);
     
-        for (i = 0; a[i] != '\0'; i++)
+        for (i = 0; aa[i] != '\0'; i++)
         {
-            for (j = 0; a[j + 1] != '\0'; j++)
+            for (j = 0; aa[j + 1] != '\0'; j++)
             {
-                if( a[j]<a[j+1])
+                if( aa[j]<aa[j+1])
                 {
-                    temp = a[j];
-                    a[j] = a[j+1];
-                    a[j+1] = temp;
+                    temp = aa[j];
+                    aa[j] = aa[j+1];
+                    aa[j+1] = temp;
                 }
             }
         }
 
-        printf("%s ", a);,
+        printf("%s ", aa);
 
-*/
-
-    { 
-        int n1=5,i,j,k=15; 
-            for(i=n;i>=0;i++) 
-    { 
-        for(m=0,m<k;m++)printf(" "); 
-            for(j=i;j<=n,j--) printf("%3d",j); 
-                Printf("\n");k-=3; 
-    }
     return 0;
     }
