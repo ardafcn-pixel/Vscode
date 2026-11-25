@@ -58,8 +58,6 @@ int main(){
             printf("\n %d \n", B[i]);
         }
         
-        
-        
     int a[3];
 
         for ( i = 1; i < 4; i++)
@@ -191,16 +189,16 @@ int main(){
 
     int temp;
     
-        int arda[]= {4,1,2,1,6};
+        int arda[] = {4,1,2,1,6};
 
             for (i=sizeof(arda)/sizeof(arda[0]); i>0; i--)
             {
                 
                     if (arda[i] < arda[i+1])
                     {
-                    temp == arda[i];
-                    arda [i] == arda[i+1];
-                    arda [i+1] == temp;
+                    temp = arda[i];
+                    arda [i] = arda[i+1];
+                    arda [i+1] = temp;
                     }
                     
             }
